@@ -29,7 +29,7 @@
       padding: 1rem;
       background-color: rgb(239, 239, 240);
       color: rgb(114, 134, 160);
-        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
     }
     
     h1{
