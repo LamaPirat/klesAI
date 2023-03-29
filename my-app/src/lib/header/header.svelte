@@ -10,13 +10,14 @@
   
   <header>
     <div class="left-header">
-      <span class="material-symbols-outlined">
-        menu
-        </span>
+      <img src="/images/mascot.png" alt="">
     </div>
     
-    
+    <div class="center-header">
     <h1>{title}</h1>
+    </div>
+
+
     <div class="right-header"><span class="material-symbols-outlined">account_circle</span></div>
   </header>
   
@@ -27,14 +28,14 @@
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      background-color: rgb(239, 239, 240);
-      color: rgb(114, 134, 160);
-      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+      color: #ffffff;
+      
     }
     
     h1{
         
         font-family: "Josefin Sans", sans-serif;
+        text-shadow: black 0.1em 0.1em 0.2em;
     }
 
 
@@ -42,13 +43,21 @@
         position: absolute;
         left: 0;
         padding: 1rem;
-        
+    }
+    .left-header img{
+        width: 100px;
+        height: 100px;
     }
 
     .right-header{
         position: absolute;
         right: 0;
         padding: 1rem;
+    }
+
+    .right-header span{
+        font-size: 2rem;
+        text-shadow: rgb(107, 107, 107) 0.1em 0.1em 0.2em;
     }
 
    

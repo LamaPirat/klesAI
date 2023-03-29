@@ -23,20 +23,21 @@
   
   <style>
     .carousel {
-      width: 100%;
+      width: 200px;
       height: 300px;
       overflow: hidden;
       position: relative;
     }
     
     .carousel-image {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-fit: cover;
       position: absolute;
       top: 0;
       left: 0;
       transition: opacity 1s ease-in-out;
+      justify-self: center;
     }
   </style>
   

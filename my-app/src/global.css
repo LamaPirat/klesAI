@@ -1,5 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color: rgb(230, 230, 230);
+	/* background-color: #81f6ec; */
+	background: radial-gradient(circle at center, #81f6ec, #00a19c, #005e5b);
+	font-family: 'Roboto', sans-serif;
 }
