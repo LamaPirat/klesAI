@@ -20,8 +20,8 @@ export let text = '';
 <style>
  :root{
     /* color type A */
-    --line_color : #555555 ;
-    --back_color : #FFECF6  ;
+    --line_color : #ffffff;
+    --back_color : #d1a4bc  ;
 
     /* color type B */
     /* --line_color : #1b1919 ;
@@ -43,6 +43,7 @@ export let text = '';
     color : var(--line_color) ;
     letter-spacing : 2px ;
     transition : all .3s ease ;
+    margin-left: 1.5rem;
 }
 .button__text{
     display : flex ;

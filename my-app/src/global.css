@@ -4,4 +4,6 @@ body {
 	/* background-color: #81f6ec; */
 	background: radial-gradient(circle at center, #81f6ec, #00a19c, #005e5b);
 	font-family: 'Roboto', sans-serif;
+
+	z-index: 1;
 }
