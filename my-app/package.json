@@ -27,6 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"deepai": "^1.0.21",
+		"openai": "^3.2.1",
 		"svelte-burger-menu": "^2.0.5"
 	}
 }

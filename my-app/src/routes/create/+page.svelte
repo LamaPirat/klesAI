@@ -1,23 +1,53 @@
-<!-- <script src="https://cdnjs.deepai.org/deepai.min.js">
-    deepai.setApiKey("YOUR_API_KEY");
 
-</script> -->
+<script lang="js">
+// @ts-nocheck
 
+   
 
+  let userInput = '';
+
+  async function generateImage() {
+  try {
+    const res = await fetch('/api/generate-image', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userInput }),
+    });
+    const data = await res.json();
+    return data.image_url;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+function handleKeyDown(event) {
+    if (event.key === 'Enter') {
+      const submitButton = document.querySelector(
+        'button[type="submit"]'
+      );
+      if (submitButton) {
+        submitButton.click();
+      }
+    }
+  }
+
+</script>
 <div class="create-contain">
-    <div class="create-display">
+ <div class="create-display">
         <img src="images/plainTShirt.png" alt="">
         <div class="creation-display">
             <img id="creation-image" src="" alt="">
         </div>
     </div>
-    <div class="input-container">
-        <div class="demo-flex-spacer"></div>
-        <div class="webflow-style-input">
-          <input class="" type="email" placeholder="What's on your mind?">
-          <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
-        </div>
-    </div>
+<div class="input-container">
+  <div class="demo-flex-spacer"></div>
+  <div class="webflow-style-input">
+    <input bind:value={userInput} on:keydown={handleKeyDown} type="text" placeholder="What's on your mind?" />
+    <button on:click|preventDefault={generateImage} type="submit">
+      <i class="icon ion-android-arrow-forward"></i>
+    </button>
+  </div>
+</div>
 </div>
 
 
