@@ -2,6 +2,7 @@
   import Carousel from "./carousel.svelte";
   import Gradient from "./gradient.svelte";
   import Button from "./button.svelte";
+  import ModelContain from "./modelContain.svelte";
   import SvgPattern from "$lib/other/svgPattern.svelte";
 </script>
 
@@ -14,10 +15,7 @@
     <Button text="Ingen tid å miste!" />
   </div>
   <div class="right-container">
-    <Carousel />
-  </div>
-  <div class="svg-element">
-    <SvgPattern />
+    <ModelContain />
   </div>
 </div>
 
@@ -29,19 +27,23 @@
   .main-container{
     height: 100%;
     display: flex;
-    padding-top: 5rem;
+    
     display: flex;
     justify-content: space-evenly;
   }
 
-  .svg-element{
-    width: 100%;
+
+  .right-container{
+    width: 60%;
     height: 100%;
-    position: absolute;
-    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
+  
 
 .left-container{
+  padding-top: 5rem;
   width: auto;
   height: fit-content;
   display: inline-block

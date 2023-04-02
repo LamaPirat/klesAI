@@ -10,9 +10,9 @@
 <div class="container">
     <header><Header title="Creatique" /></header>
     <main><Main /></main>
-    <div class="svg-element">
+    <!-- <div class="svg-element">
         <SvgPattern />
-      </div>
+      </div> -->
 </div>
 
 
