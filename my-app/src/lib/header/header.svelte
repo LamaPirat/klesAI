@@ -12,13 +12,21 @@
     <div class="left-header">
       <img src="/images/mascot.png" alt="">
     </div>
-    
     <div class="center-header">
     <h1>{title}</h1>
+    
     </div>
-
-
-    <div class="right-header"><span class="material-symbols-outlined">account_circle</span></div>
+    <div class="right-header">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="material-symbols-outlined">account_circle</span>
+    </div>
   </header>
   
   <style>
@@ -36,8 +44,42 @@
         
         font-family: "Josefin Sans", sans-serif;
         text-shadow: black 0.1em 0.1em 0.2em;
+        /* text align center */
+        text-align: center;
+    }
+    nav, ul, li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /* remove all list styles from li and ul*/
+        text-decoration: none;
     }
 
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+        
+    }
 
     .left-header{
         position: absolute;
@@ -53,6 +95,8 @@
         position: absolute;
         right: 0;
         padding: 1rem;
+        display: flex;
+        gap: 20px;
     }
 
     .right-header span{

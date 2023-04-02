@@ -2,11 +2,13 @@
 
 <script>
 export let text = '';
+
+
 </script>
 
 <div class="container">
 
-    <a href="#" class="button">
+    <a href="/create" class="button">
       <div class="button__line"></div>
       <div class="button__line"></div>
       <span class="button__text">{text}</span>
